@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Search Suggestion Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="search-container">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Smart Search AI</h1>
+        <div class="search-input-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search for concepts, tech, tools..."
+                role="combobox"
+                aria-autocomplete="list"
+                aria-haspopup="true"
+                aria-controls="suggestionsBox"
+                aria-expanded="false"
+                aria-live="polite"
+            >
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <button id="clearInputBtn" class="clear-input-btn hidden" title="Clear search">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="suggestionsBox" class="suggestions-box" role="listbox">
+        </div>
+        <div id="recentSearchesBox" class="recent-searches-box">
+            <h3>Recent Searches</h3>
+            <div id="recentSearchesList">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
