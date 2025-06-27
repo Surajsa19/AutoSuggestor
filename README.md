@@ -84,7 +84,7 @@ While comprehensive, this project can be further extended:
 
 Feel free to reach out for questions, feedback, or potential collaborations!
 
-* **Your Name** - [Your Email](mailto:surajdas007695@gmail.com)
+* **Suraj Sa** - (mailto:surajdas007695@gmail.com)
 * [LinkedIn Profile](https://www.linkedin.com/in/suraj-sa-69a4b6289/)
 
 ---
